@@ -12,3 +12,4 @@ else:
 
 
 print(f"For this house worth {str(House)}$ you need to put down {str(int(Downpayment))}$ as downpayment")
+end()
