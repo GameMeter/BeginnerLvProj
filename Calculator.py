@@ -23,3 +23,4 @@ def whileloop():
             print(num)
 
 whileloop()
+#its a loop
