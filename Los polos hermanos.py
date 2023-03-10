@@ -85,7 +85,7 @@ def Gustavo_Fring():
                     exit()
             else:
                 print("What?")
-                Choice()
+                Drinks()
         Drinks()
 
     # If the user wants to goto the family section they are greeted by a server where inturn they have multiple option
@@ -209,7 +209,8 @@ def Gustavo_Fring():
             Family()
     else:
         print("What?")
-        Choice()
+        quit()
+        
 Gustavo_Fring()
 
 # If the users name is not Walter and they accept the membership they get access to the supermarket where they are
