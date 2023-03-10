@@ -142,19 +142,18 @@ def Gustavo_Fring():
                         retake_formula = input("Do you want to do the game if you lose? y/n: ")
                         def GameStart():
                             x = random.randrange(1, 10)
-                            Guess = input("What do you think the number is?")
-                            print(x)
-                            if x == " ":
-                                print("again")
-                                GameStart()
-                            else:
-                                if x == int(Guess):
-                                    print("Aight you win")
+                            notrys = 10
+                            while True:
+                                Guess = input("What do you think the number is?")
+                                notrys -= 1
+                                if int(Guess) == x:
+                                    print("Good job")
                                     exit()
-                                else:
+                                if notrys == int(0):
                                     if retake_formula == "y":
                                         GameStart()
                                     else:
+                                        print("you lost the game")
                                         exit()
                         GameStart()
                     Game()
